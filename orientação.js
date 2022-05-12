@@ -15,7 +15,7 @@ $("#bt").click (function(){
             }
             else if(req.media_type == 'video'){
             vid.attr("src", req.url).css("display", "flex")
-            img.attr("display", "none")   
+            img.css("display", "none")   
             }
             exp.text(req.explanation)
         }

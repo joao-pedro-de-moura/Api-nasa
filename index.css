@@ -1,8 +1,26 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
 body{
     background-image: url(buraco.jpg) ;
     background-repeat:no-repeat;
-    background-size: 100vh;
+    background-image: 100vh;
     background-size: cover;
+    font-size: small;
 }
 .form{
     display: flex;
@@ -15,8 +33,6 @@ body{
     background-color: rgba(238, 228, 228, 0.8);
     border-radius: 30px;
     border-style: initial;
-    border-width: medium;
-    border-color: coral;
     flex-direction: column;
     position: relative;
     top: 40px;
@@ -25,7 +41,7 @@ body{
     align-content: center;
     align-items: center;
     width: 500px;
-    height: 500px;
+    height: auto;
     justify-content: space-between;
 }
 #imgNasa{
@@ -36,18 +52,40 @@ header{
     display: flex;
     justify-content: center;
 }
+.vid{ max-width: 300px;
+    max-height: 300px;
+    position: relative;
+    top: 20px;
+    display: none;
+
+}
 .img{
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 300px;
+    max-height: 300px;
     position: relative;
     top: 20px;
 }
 .bt{
-    width: 50px;
+    width: 40px;
+    height: 30px;
     
 }
 .text{
    position: relative;
    top: 10px;
     
+}
+.textd{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+.conteudo{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
